@@ -1,0 +1,223 @@
+:root{
+    --navColor:#363062;
+}
+
+/* https://colorhunt.co/palette/d2e0fbf9f3ccd7e5ca8eaccd */
+
+body {
+    width: 1,920px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Global List: removal of bullet*/
+ul{
+    list-style-type: none;
+}
+
+/* navigation section */
+nav{
+     background-color: var(--navColor); 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    color: white;
+
+    position: sticky;
+    top: 0;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li  {
+    width: 150px;
+    font-size: 1.5em;
+
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav li a {
+    color: white;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: pink;
+}
+
+#page-owner{
+    font-size: 2em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* introduction section */
+#introduction{
+  border-bottom: 1px solid silver;
+
+}
+
+#introduction-content-1 , #introduction-content-2 , #introduction-content-3{
+    font-size: 23px;
+}
+
+
+.container{
+
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+#introduction-card-1, #introduction-card-2, #introduction-card-3{
+    background-color: #D2E0FB;
+    color: black;
+    font-size: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+    padding: 5px;
+}
+
+/* techstack section */
+.techstack-image{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit:contain;
+
+    height: 200px;
+    width: 200px;
+    
+    padding: 5px;
+
+    border: 3px solid silver;
+    border-radius: 5px;
+
+    margin: 10px;
+
+    transition: 0.4s ease-in-out;
+}
+
+#techstack-section > h2 , #other-section > h2 , #project-section > h2 , #project-section > h2 {
+    text-align: center;
+}
+
+#techstack-section table , #other-section table {
+    margin: auto;
+    text-align: center;
+}
+
+#techstack-section abbr , #other-section abbr {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.grid-table tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hidden-div{
+    border: 1px solid red;
+    text-align: left;
+    max-width: 234px;
+    max-height: 200px;
+}
+
+
+
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+}
+
+#project-grid .project-title {
+    font-size: 30px;
+}
+
+#project-grid li  {
+    text-align: center;
+    font-size: 20px;
+    
+    border: 2px solid silver;
+    border-radius: 10px;
+    width: 80%;
+
+    background-color: #FFF6F6;
+    margin: auto;
+    
+
+}
+
+
+#project-grid .grid-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    height: 70px;
+
+    border-top: 1px solid silver;
+    background-color: #FFDFDF;
+
+}
+
+#project-grid button {
+    height: 60px;
+    width: 200px;
+}
+
+.source-code-btn > img {
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.btn-caption {
+    font-size: 20px;
+    padding: 5px;
+
+    position: relative;
+    top: -5px;
+}
+
+footer{
+    border-top: 1px solid;
+    padding: 5px;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+footer li {
+    font-size: 20px;
+}
+
+#contact {
+    
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #E5D4FF;
+    width: 20%;
+    margin: auto;
+}
+
+#contact-title {
+    font-size: 25px;
+    text-align: center;
+}
+

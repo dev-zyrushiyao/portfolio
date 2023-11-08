@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Zyrus Hiyao</title>
+   
+    
+</head>
+<body>
+    <nav>
+        <label id="page-owner"></label>
+        <ul>
+            <li><a href="#introduction">Home</a></li>
+            <li><a href="#techstack-section">Skills</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="introduction">
+        <!-- Introduction GRID-->
+        <div class="container">
+            <div id="introduction-card-1" onmouseover="popUpElement1(this)">
+                <h2>Introduction</h2>
+            </div>
+            
+            <div id="introduction-content-1">
+                <p id="popup-1">
+                    Hi! I'm Zyrus Hiyao 
+                    <br>
+                    Java Springboot Developer
+                    <br>
+                    Laguna, PH</p>
+            </div>
+        </div>
+        <!-- Educational Background -->
+        <div class="container">
+            <div id="introduction-card-2" onmouseover="popUpElement2(this)">
+                <h2 title="School/Course">Educational Background</h2>
+            </div>
+                <div>
+                    <div id="introduction-content-2" >
+                        <ul id="popup-2">
+                            <li>
+                                <p>STI College Calamba
+                                    <br>
+                                    Course: Associate in Computer Technology
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Coding Dojo Philippines
+                                    <br>
+                                    Course: Java Stack 
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <!-- Hobbies -->
+        <div class="container">
+            <div id="introduction-card-3" onmouseover="popUpElement3(this)">
+                <h2>Hobbies</h2>
+            </div>
+            
+            <div id="introduction-content-3">
+                <ul id="popup-3">
+                    <li>Music Production</li>
+                    <li>Playing Guitar</li>
+                    <li>Playing Games</li>
+                    <li>Cooking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skill Introduction -->
+    <!-- Hidden Div for Smooth Transition -->
+        <div id="techstack-section">
+            <h2>TechStack</h2>
+    
+            <table class="grid-table">
+                <tr>
+                    <td>
+                        <img src="assets/img/html-logo.png" alt="HTML-logo" class="techstack-image"  id="html_img">
+                        <br>
+                        <abbr title="Hyper Text Markup Language 5">HTML5</abbr>
+                    </td>
+                    <td>
+                        <img src="assets/img/css-logo.png" alt="CSS-logo" class="techstack-image"  id="css_img">
+                        <br>
+                        <abbr title="Cascading Style Sheets 3">CSS 3</abbr>
+                    </td>
+                    <td>
+                        <img src="assets/img/JavaScript-Logo.png" alt="JavaScript-Logo" class="techstack-image"  id="js_img" onclick="clickImg(this)" onmouseover="hoverImg(this)">
+                        <div class="hidden-div" id="js_info" hidden></div>
+                        <br>
+                        <abbr title="JavaScript ES6">Javascript</abbr>
+                    </td>
+                    <td>
+                        <img src="assets/img/bootstrap-logo.png" alt="bootstrap-logo" class="techstack-image"  id="bootstrap_img">
+                        <br>
+                        <abbr title="Bootstrap Framework">Bootstrap</abbr>
+                    </td>
+                    <td>
+                        <img src="assets/img/Java_logo.png" alt="Java-logo" class="techstack-image" id="java_img" onclick="clickImg(this)" onmouseover="hoverImg(this)">
+                        <div class="hidden-div" id="java_info" hidden></div>
+                        <br>
+                        <abbr title="Java Programming Language">Java</abbr>
+                    </td>
+                    <td id="spring-boot-information">
+                        <img src="assets/img/spring-boot-logo.png" alt="Spring_Boot-logo"  class="techstack-image" id="springboot_img" onclick="clickImg(this)" onmouseover="hoverImg(this)">
+                        <div class="hidden-div" id="springboot_info" hidden></div>
+                        <br>
+                        <abbr title="Spring Boot Framework">Spring Boot</abbr>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="other-section">
+            <h2 title="little-exposure">Others</h2>
+            <table class="grid-table">
+                <tr>
+                    <td>
+                        <img src="assets/img/Git-logo.png" alt="Git-logo" class="techstack-image">
+                        <br>
+                        <abbr title="Git">Git</abbr>
+                    </td>
+                    <td>
+                        <img src="assets/img/Jira-logo.png" alt="Jira-logo" class="techstack-image">
+                        <br>
+                        <abbr title="Atlassian Jira">Jira</abbr>
+                    </td>
+                    <td>
+                        <img src="assets/img/AWS-logo.png" alt="AWS-Logo" class="techstack-image">
+                        <br>
+                        <abbr title="Amazon Web Services">AWS</abbr>
+                    </td>
+                    <td>
+                        <img src="assets/img/MySQL_logo.png" alt="MySQL-logo" class="techstack-image">
+                        <br>
+                        <abbr title="My Structed Query Language">MySQL</abbr>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+        <div id="project-section">
+        <h2>Projects</h2>
+        <ul id ="project-grid">
+            <li>
+                <p><span class="project-title">Game Review App</span>
+                    <br>
+                    Created using: Springboot , JSP , MySQL
+                </p>
+                <div class="grid-form">
+                    <form action="https://github.com/dev-zyrushiyao/GameReviewApp" method="GET" target="_blank">
+                        <button type="submit" class="source-code-btn"><img src="assets/icon/github-logo.png" alt="github-logo"><span class="btn-caption">Source Code</span></button>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <p><span class="project-title">Forums App</span>
+                    <br>
+                    Created using: Springboot , JSP , Javascript , MySQL 
+                </p>
+                <div class="grid-form">
+                    <form action="https://github.com/dev-zyrushiyao/ForumsApp" method="GET" target="_blank">
+                        <button type="submit" class="source-code-btn"><img src="assets/icon/github-logo.png" alt="github-logo"><span class="btn-caption">Source Code</span></button>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <p><span class="project-title">Date Calculator (JS Practice)</span>
+                    <br>
+                    Created using: Javascript
+                </p>
+                <div class="grid-form">
+                    <form action="https://github.com/dev-zyrushiyao/date-calculator/blob/main/date_calculator.js" method="GET" target="_blank">
+                        <button type="submit" class="source-code-btn"><img src="assets/icon/github-logo.png" alt="github-logo"><span class="btn-caption">Source Code</span></button>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <p><span class="project-title">Profile Page(HTML Practice)</span>
+                    <br>
+                    Created using: HTML5 , CSS3
+                </p>
+                <div class="grid-form">
+                    <form action="https://dev-zyrushiyao.github.io/profile-page/" method="GET" target="_blank">
+                        <button type="submit" class="source-code-btn"><img src="assets/icon/web-icon-logo-A6B586D114-seeklogo.com.png" alt="web-logo"><span class="btn-caption">Live Page</span></button>
+                    </form>
+                    <form action="https://github.com/dev-zyrushiyao/profile-page" method="GET" target="_blank">
+                        <button type="submit" class="source-code-btn"><img src="assets/icon/github-logo.png" alt="github-logo"><span class="btn-caption">Source Code</span></button>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <p><span class="project-title">Portfolio Page</span>
+                    <br>
+                    Created using: HTML5 , CSS3 , JavaScript
+                </p>
+                <div class="grid-form">
+<<<<<<< HEAD
+                    <form action="https://dev-zyrushiyao.github.io/portfolio/" method="GET" target="_blank">
+                        <button type="submit" class="source-code-btn"><img src="assets/icon/web-icon-logo-A6B586D114-seeklogo.com.png" alt="web-logo"><span class="btn-caption">Live Page</span></button>
+                    </form>
+                    <form action="https://github.com/dev-zyrushiyao/portfolio" method="GET" target="_blank">
+=======
+                    <form action="TEST" method="GET" target="_blank">
+                        <button type="submit" class="source-code-btn"><img src="assets/icon/web-icon-logo-A6B586D114-seeklogo.com.png" alt="web-logo"><span class="btn-caption">Live Page</span></button>
+                    </form>
+                    <form action="TEST" method="GET" target="_blank">
+>>>>>>> d28534b29368ffbe0afc5eab08ce66d02de8af19
+                        <button type="submit" class="source-code-btn"><img src="assets/icon/web-icon-logo-A6B586D114-seeklogo.com.png" alt="web-logo"><span class="btn-caption">Source Code</span></button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <div id="contact">
+            <div id="contact-title">
+                <label>Contact</label>
+            </div>
+            <ul>
+                <li><a href="https://github.com/dev-zyrushiyao">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/zyrus-hiyao/">Linkedin</a></li>
+                <li>Email:<a href="mailto:zyrushiyao@gmail.com">zyrushiyao@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script/portfolio.js"></script>
+</body>
+
+
+</html>
+
